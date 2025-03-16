@@ -7,8 +7,56 @@ html,body{
     background-color: #181818;
     scroll-behavior: smooth;
 }
+.my{
+    margin: 0 .75rem;
+}
+.headColor{
+    /* color: lightblue; */
+    color: whitesmoke;
+}
+.btn{
+    /* background-color: whitesmoke; */
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    padding: .3rem 1rem;
+}
 #temp1{
-    width: 100%;
+    width: 98%;
     height: 350px;
-    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    border-radius: 1rem;
+    margin: .75rem auto;
+}
+#card{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-15deg);
+}
+#card img{
+    width: 290%;
+    height: 107%;
+    position: absolute;
+}
+#rotateLeft{
+    transform: rotate(45deg);
+    
+}
+                                    /* Mobile */
+@media (max-width:480) {
+    *{
+        font-size: 1.2rem;
+    }
+}
+                                    /* Tablet */
+@media (max-width:768) {
+    *{
+        font-size: 1.5rem;
+    }
 }
