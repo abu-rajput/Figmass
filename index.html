@@ -16,7 +16,7 @@
     <title>Figma Component Library-Free & Ready to use</title>
   </head>
   <body>
-    <header class="shadow-lg ">
+    <header class="shadow-lg position-static">
       <nav class="navbar navbar-expand-lg text-white ">
         <div class="container-fluid">
           <a class="navbar-brand headColor" href="#">Figmass</a>
@@ -58,13 +58,13 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              </li> -->
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2 w-75"
+                class="form-control me-2 "
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -75,8 +75,11 @@
               <button class="btn btn-outline-success me-2" type="submit">
                 Sign&nbsp;in
               </button>
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn btn-outline-success me-2" type="submit">
                 Sign&nbspup
+              </button>
+              <button class="btn btn-outline-primary" type="submit">
+                Upload&nbspComponent
               </button>
             </form>
           </div>
@@ -86,15 +89,15 @@
     </header>
     <article class="my">
       <div id="tab">
-        <ul class="nav ">
+        <ul class="nav scroll">
           <li class="nav-item ">
-            <a class="nav-link headColor btn me-2" aria-current="page" href="#">All Components</a>
+            <a class="nav-link headColor btn me-2" aria-current="page" href="#">Header</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link headColor btn me-2" href="#">Pricing</a>
+            <a class="nav-link headColor btn me-2" href="#">Footer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link headColor btn me-2" href="#">Career</a>
+            <a class="nav-link headColor btn me-2" href="#">Cards</a>
           </li>
           <li class="nav-item">
             <a class="nav-link headColor btn me-2" >Product</a>
@@ -110,6 +113,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link headColor btn me-2" >Wireframe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headColor btn me-2" href="#">Alert</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link headColor btn me-2" aria-current="page" href="#">Components</a>
@@ -137,7 +143,7 @@
         </div>
         <div class="col-4 position-relative">
           <div id="card">
-          <img src="" alt="">
+          <img src="./img/firstimg.jpg" alt="">
           </div>
           
         </div>
@@ -146,28 +152,33 @@
         
       </div>
     </article>
-    <section class="">
-      <p>Recently added</p>
+    <section class=" d-flex justify-content-between my">
+      <h5 class="text-white ">Recently added</h5>
       <article class="my">
-        <div id="tab ">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Small button
+          </button>
+          <div class="flex-column">
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">html</a>
+              </li>
+              <li>
+                <a href="#">css</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
         </div>
       </article>
     </section>
+  <main class="my">
+    <section>
 
+    </section>
+  </main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
