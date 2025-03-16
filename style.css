@@ -28,7 +28,7 @@ html,body{
     justify-content: center;
     /* border: 1px solid white; */
     border-radius: 1rem;
-    margin: .75rem auto;
+    margin: 1.5rem auto;
 }
 #card{
     width: 15rem;
@@ -48,15 +48,24 @@ html,body{
     transform: rotate(45deg);
     
 }
+.scroll{
+    display: flex;
+}
                                     /* Mobile */
-@media (max-width:480) {
+@media screen and (max-width: 480px) {
     *{
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
+    .scroll{
+        overflow: scroll;
+        flex-wrap: nowrap;
+        scrollbar-width:0;
+    }
+    
 }
                                     /* Tablet */
-@media (max-width:768) {
+@media screen and (max-width: 768px) {
     *{
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
 }
